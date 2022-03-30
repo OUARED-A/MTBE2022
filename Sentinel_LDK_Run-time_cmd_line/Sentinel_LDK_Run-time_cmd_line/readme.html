@@ -1,0 +1,152 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<style>
+h1 {
+	font: normal normal bold 175%sans-serif;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #f7941c;
+	}
+
+h2, {
+	font: normal normal bold 150% 
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #f7941c;
+}
+h3, {
+	font: normal normal bold 100% 
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #f7941c;
+}
+h4, {
+	font: normal normal bold 100% 
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: black;
+}
+body, {
+	font: normal normal normal smaller sans-serif;<font size="+1"></font>
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: White;
+	Color: Black;
+	margin: 16px;
+}
+ul, {
+	font: normal normal normal 100%
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	list-style: disc outside;
+	list-style-position: outside;
+	text-align: left;
+	margin: 16px;
+}
+li {
+	font: normal normal normal 100%
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	text-align: left;
+}
+
+p{
+	font-family: sans-serif;
+}
+pre{
+	font-family: monospace;
+}
+note{
+	font-family: "Times New Roman", Times, serif;
+	font-size: x-small;
+}
+code {
+		font-family: "Courier New", Courier, monospace;
+		font-size: 98%;
+	}
+	a:link {
+		text-decoration: none;
+	}
+	a:visited {
+		text-decoration: none;
+	}
+</style>
+	<title>Sentinel LDK and Sentinel HASP Run-time Environment Command-line Installer: Readme</title>
+</head>
+<body>
+
+<h1>Sentinel<sup>&reg;</sup> LDK and Sentinel HASP<sup>&reg;</sup> Run-time Environment Command-line Installer: Readme</h1>
+<h2>Installer Version 6.23</h2>
+<h2>Package Version 6.23</h2>
+<h3>March 2012</h3>
+<hr align="left">
+<p>This document provides information regarding the Run-time Environment Command-line 
+  Installer for Sentinel HASP and Sentinel LDK, including enhancements and limitations. 
+  Using this installer, you can test HASP4, Hardlock, Sentinel HL, Sentinel HASP, 
+  and Sentinel LDK under any of the supported operating systems. (&quot;Sentinel 
+  LDK&quot; is the next generation of the Sentinel HASP system.)</p>
+
+
+<h2>Operating Systems Supported</h2>
+<ul>
+<li>Windows 2000 </li>
+<li>Windows XP (32-bit and 64-bit) </li>
+<li>Windows Server 2003 (32-bit and 64-bit) </li>
+<li>Windows Vista (32-bit and 64-bit) </li>
+<li>Windows 2008 (32-bit and 64-bit) </li>
+<li>Windows 7 (32-bit and 64-bit) </li>
+<li>Windows 2008 R2 </li>
+</ul>
+<p><b>Notes</b></p>
+<ul>
+  <li>Windows&nbsp;XP Embedded is not supported with this installer. To install 
+    the Run-time environment under Windows&nbsp;XP&nbsp;Embedded, use the SLD 
+    file.</li>
+<br><br><li>The installer detects the version of the operating system at run-time, before
+installing the relevant drivers. </li>
+</ul>
+
+<h2>Changes in Terminology</h2>
+<p>Sentinel Admin Control Center user interface and help files incorporate changes in terminology as follows:</p>
+<ul>
+<li>The Sentinel HASP product is now referred to as Sentinel LDK.</li>
+<li>HASP keys are now referred to as Sentinel keys.</li>
+<li>SL keys that were created with Sentinel HASP Business Studio now appear in the user interface as "SL-Legacy" keys.</li>
+<li>References to Sentinel EMS in the help files are also valid for Sentinel HASP Business Studio. </li>
+</ul>
+
+
+<h2>Installation</h2>
+<ul>
+<li>Type <B><code>haspdinst.exe -?</code></B> for command-line help.</li>
+<li>To use Sentinel EMS to produce Run-time Environment installers in the Sentinel LDK v.6.0 environment, overwrite the <code>haspdinst.exe</code> file in 
+<br><b>...\Program Files\SafeNet Sentinel\Sentinel LDK\Redistribute\Runtime Environment\cmd&nbsp;Install\</b> with the file in this package.</li>
+</ul>
+<b>Note</b>
+<ul>
+<li>By default, Windows Vista, Windows Server 2008, and Windows&nbsp;7 operating systems display a <b>User Account Control</b> 
+message during driver installation. Users must click <b>Continue</b> to continue the installation. Alternatively, 
+users can change the default setting from the Control Panel of their operating system.</li>
+</ul>
+
+<h2>Upgrade Notes</h2>
+
+<ul>
+  <li>When upgrading the Run-time Environment, ensure that it is not currently 
+    being accessed. Although the installation program can terminate applications 
+    that are accessing the Run-time, it cannot terminate running services. </li>
+<li>If you are running HASP License Manager (HASP4 and HASP HL legacy License Manager) as a service, 
+you must stop the License Manager before proceeding with the installation.</li>
+</ul>
+<h2>Issues Resolved</h2>
+<ul>
+  <li>Ref #8033: If you attempted to update the Sentinel HASP Run-time, and your 
+    protected application uses DataHASP, it was necessary to close the protected 
+    application before running the update.</li>
+  (Resolved in version 6.22)<br>
+  <br>
+  <li>MKS 146944, 147038: The License Manager would eventually lose track of the 
+    number of detached licenses for a given Product if the number of available 
+    licenses for that Product was changed to a value lower than the number of 
+    licenses currently detached.</li>
+</ul>
+
+<p><font face="Palatino Linotype" color="#000000">Copyright &copy; 2012 SafeNet, 
+  Inc. All rights reserved.<br>
+  </font></p>
+<div align="right"><font size="-2">DocID 129c Revision 1203-2</font></div>
+
+</body>
+</html>

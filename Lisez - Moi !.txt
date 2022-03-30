@@ -1,0 +1,40 @@
+1 - Installer Windev 17
+
+Liens :
+
+WinDev 17
+ftp://ftp4.pcsoft.fr/wx17_56g/WD170PACKDVD056g.exe
+
+WebDev 17
+ftp://ftp4.pcsoft.fr/wx17_56g/WB170PACKDVD056g_2.exe
+
+WinDev Mobile 17
+ftp://ftp4.pcsoft.fr/wx17_56g/WM170PACKDVD056g.exe
+
+
+2 - Désactiver le MCU de WinDows
+
+(Panneau de configuration --> Comptes et protection des utilisateurs --> Comptes d’utilisateurs --> modifier les paramètre de comptes utilisateur
+
+choisir " Ne jamais m'avertir "
+
+3 - Redémarrer la machine
+
+4 - Installer les REG 32 ou 64 bits (Wb17_64.reg, WD17_64.reg, WM17_64.reg ou Wb17_32.reg, WD17_32.reg, WM17_32.reg)
+
+5 - executer ces deux commandes sous DOS pour désactiver la signature des plilotes:
+
+bcdedit.exe -set TESTSIGNING ON
+bcdedit /set nointegritychecks ON 
+
+6 - Installer Sentinel_LDK_Run-time_cmd_line
+
+7 - Installer Sentinel_LDK_Run-time_setup
+
+8 - Redémarrer la machine
+
+9 - Aller dans le dossier Emulateur et éxecuter install-emulator.bat
+
+10 - Attendez la fin de l'installation des pilotes et redémarrer la machine
+
+11 - Lancer Windev 17 and ENJOY !!!
